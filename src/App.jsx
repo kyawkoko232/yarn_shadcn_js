@@ -13,6 +13,8 @@ import {
 } from "./pages";
 import NavComponents from "./components/Nav.components";
 import FormPage from "./pages/forms/Form.page";
+import QuillEditor from "./pages/text_editors/Quill.page";
+import CkApp from "./pages/text_editors/CkEditor";
 
 // import NotFound from "../not-found";
 
@@ -32,6 +34,7 @@ const App = () => {
         <Route path="/register" element={<Register />} />
 
         <Route path="/form" element={<FormPage />} />
+        <Route path="/quill" element={<CkApp />} />
         {/* <Route path="/detail/:id" element={<DetailBookPage />} /> */}
         <Route path="/products/:productId" element={<ShowProduct />} />
         <Route path="/product" element={<AllProducts />}>    
