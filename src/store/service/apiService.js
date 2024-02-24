@@ -2,11 +2,11 @@ import {createApi, fetchBaseQuery, } from '@reduxjs/toolkit/query/react'
 
 
 export const ApiService = createApi({
-    reducerPath : "products",
+    reducerPath : "api",
     baseQuery : fetchBaseQuery({
-        baseUrl: "https://dummyjson.com/"
+        baseUrl: "http://127.0.0.1:8000/api/v1"
     }),
-    endpoints: () => ({}),
+    endpoints: (builder) => ({}),
 
    
 })

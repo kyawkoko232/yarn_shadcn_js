@@ -1,4 +1,4 @@
-import { useDeleteProductMutation } from "../../store/service/endpoints/products.endpoints";
+import { useDeleteProductMutation } from "../../store/service/endpoints/products.endpoint";
 
 const DeleteProduct = ({ productId }) => {
   const [deleteProduct, { data, error, isLoading }] =

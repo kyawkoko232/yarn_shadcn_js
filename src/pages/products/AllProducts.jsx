@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import { useGetAllProductsQuery } from '../../store/service/endpoints/products.endpoints'
+import { useGetAllProductsQuery } from '../../store/service/endpoints/products.endpoint'
 
 const AllProducts = () => {
     const {data, isError, isLoading } = useGetAllProductsQuery();

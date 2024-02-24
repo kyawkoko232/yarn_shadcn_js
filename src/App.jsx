@@ -4,6 +4,8 @@ import './index.css'
 import {
  HomePage,
  AllProducts,
+ Login,
+ Register,
  AddNewProduct,
  UpdateProduct,
  DeleteProduct,
@@ -19,10 +21,16 @@ const App = () => {
 
 
   return (
-    <div className="main container mx-auto">
+    <div className="bg-secondary  h-screen">
+      <div className="main container z-[1000] scrollbar-hide mx-auto w-full ">
       <NavComponents />
+
+      <div className="pt-20 overflow-y-auto ">
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+
         <Route path="/form" element={<FormPage />} />
         {/* <Route path="/detail/:id" element={<DetailBookPage />} /> */}
         <Route path="/products/:productId" element={<ShowProduct />} />
@@ -30,7 +38,10 @@ const App = () => {
         </Route>
         {/* <Route path="*" element={<NotFound />} /> */}
       </Routes>
+      </div>
     </div>
+    </div>
+    
   );
 };
 

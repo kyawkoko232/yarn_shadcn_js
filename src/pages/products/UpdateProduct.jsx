@@ -1,4 +1,4 @@
-import { useUpdateProductMutation } from "../../store/service/endpoints/products.endpoints";
+import { useUpdateProductMutation } from "../../store/service/endpoints/products.endpoint";
 
 const UpdateProduct = ({ productId }) => {
   const [updateProduct, { data, error, isLoading }] =

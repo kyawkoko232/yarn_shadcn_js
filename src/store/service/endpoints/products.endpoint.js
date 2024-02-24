@@ -1,4 +1,4 @@
-import { ApiService } from "../apiService";
+import { ApiService } from "../ApiService";
 
 const productEndpoint = ApiService.injectEndpoints({
      endpoints : (builder) => ({

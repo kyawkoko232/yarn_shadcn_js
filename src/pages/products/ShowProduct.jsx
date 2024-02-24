@@ -1,6 +1,6 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import { useGetProductByIdQuery } from '../../store/service/endpoints/products.endpoints';
+import { useGetProductByIdQuery } from '../../store/service/endpoints/products.endpoint';
 
 const ShowProduct = () => {
   const { productId } = useParams(); // Get the productId from URL parameters
