@@ -22,12 +22,11 @@ import { useLoginMutation } from '../../store/service/endpoints/auth.endpoint';
 
 const Login = () => {
 
-  const [fun, data] = useLoginMutation();
-  console.log(fun)
+  const [fun, { data, error }] = useLoginMutation();
+  console.log(data)
   const initialValue = {
     email: "",
     password: "",
-
   }
 
   const validationSchema = yup.object({
@@ -88,10 +87,19 @@ const Login = () => {
                   </div>
 
                   <div>
-                    <Button disabled={isSubmitting} type="submit" className="w-full bg-basic"> 
-                    Login { isSubmitting && <Loader2  className="ml-4 h-4 w-4 animate-spin" /> } </Button>
+                    {error && (
+                      <div className='text-red-500'>
+                         {JSON.stringify(error.data.message)}
+                      </div>
+                    )}
                   </div>
-                  
+
+
+                  <div>
+                    <Button disabled={isSubmitting} type="submit" className="w-full bg-basic">
+                      Login {isSubmitting && <Loader2 className="ml-4 h-4 w-4 animate-spin" />} </Button>
+                  </div>
+
                 </Form>
               </>
             )

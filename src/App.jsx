@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Routes, Route } from "react-router-dom";
+import SwiperStart from './components/swiper/SwiperStart'
 import './index.css'
 import {
  HomePage,
@@ -23,7 +24,7 @@ const App = () => {
 
 
   return (
-    <div className="bg-secondary  h-screen">
+    <div className="">
       <div className="main container z-[1000] scrollbar-hide mx-auto w-full ">
       <NavComponents />
 
@@ -41,8 +42,12 @@ const App = () => {
         </Route>
         {/* <Route path="*" element={<NotFound />} /> */}
       </Routes>
+
+     
       </div>
     </div>
+
+    <SwiperStart />
     </div>
     
   );

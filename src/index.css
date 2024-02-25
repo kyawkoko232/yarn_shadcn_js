@@ -66,6 +66,12 @@
   }
 }
  
+@layer components {
+  .bottom_tab {
+      @apply rounded-xl space-x-2  h-full transition-all duration-500 flex  justify-center items-center  w-full text-center 
+    
+  }
+} 
 @layer base {
   * {
     @apply border-border;

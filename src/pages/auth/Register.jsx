@@ -72,7 +72,7 @@ const Register = () => {
         <CardHeader className="flex flex-row text-primary justify-between">
           <CardTitle>Register</CardTitle>
           <CardDescription>
-          <Link to="/register"> Already have an account?</Link>
+          <Link to="/login"> Already have an account?</Link>
            </CardDescription>
         </CardHeader>
         <CardContent>

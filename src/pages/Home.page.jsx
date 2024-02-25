@@ -5,7 +5,7 @@ import NavComponents from '../components/Nav.components';
 const HomePage = () => {
 
     return (
-        <div className="">
+        <div className="h-screen bg-slate-800">
          Home Page
         </div>
       );
