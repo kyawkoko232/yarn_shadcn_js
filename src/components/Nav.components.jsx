@@ -12,6 +12,7 @@ const NavComponents = () => {
     { name: 'Register', to: '/register', current: false },
     { name: 'Form', to: '/form', current: false },
     { name: 'quill', to: '/quill', current: false },
+    { name: 'lottie', to: '/lottie', current: false },
   ]
   
   function classNames(...classes) {

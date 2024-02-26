@@ -16,6 +16,8 @@ import NavComponents from "./components/Nav.components";
 import FormPage from "./pages/forms/Form.page";
 import QuillEditor from "./pages/text_editors/Quill.page";
 import CkApp from "./pages/text_editors/CkEditor";
+import LottieComponent from "./components/lottie/Lottie.components";
+import ResponsiveAppBar from "./components/material/AppBar.component";
 
 // import NotFound from "../not-found";
 
@@ -25,14 +27,22 @@ const App = () => {
 
   return (
     <div className="">
+       {/* <ResponsiveAppBar /> */}
       <div className="main container z-[1000] scrollbar-hide mx-auto w-full ">
       <NavComponents />
+     
 
       <div className="pt-20 overflow-y-auto ">
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
+
+
+        <Route path="/lottie" element={<LottieComponent />} />
+
+        
+
 
         <Route path="/form" element={<FormPage />} />
         <Route path="/quill" element={<CkApp />} />
